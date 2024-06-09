@@ -1,0 +1,3 @@
+[submodule "Backend/Licenta"]
+	path = Backend/Licenta
+	url = https://github.com/Patrascan-Lazar-30021/Proiect-Licenta.git
