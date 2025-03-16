@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Air Quality Data</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Temperature (°C)</th>
+          <th>Humidity (%)</th>
+          <th>MQ135</th>
+          <th>MQ7</th>
+          <th>Date & Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of airQualityData">
+          <td>{{ data.id }}</td>
+          <td>{{ data.temperature }}</td>
+          <td>{{ data.humidity }}</td>
+          <td>{{ data.mq135 }}</td>
+          <td>{{ data.mq7 }}</td>
+          <td>{{ data.datetime | date: 'short' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
